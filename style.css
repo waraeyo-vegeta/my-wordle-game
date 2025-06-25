@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 1em;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.cell {
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  border: 1px solid #999;
+}
+.correct { background: #6aaa64; color: white; }
+.present { background: #c9b458; color: white; }
+.absent { background: #787c7e; color: white; }
