@@ -1,12 +1,52 @@
 [
-  "APPLE",
-  "BANJO",
-  "CRANE",
-  "DELTA",
-  "EAGLE",
-  "FANCY",
-  "GHOST",
-  "HONEY",
-  "INPUT",
-  "JOKER"
+  {
+    "word": "APPLE",
+    "hint": "A red or green fruit. 🍎",
+    "jp": "りんご"
+  },
+  {
+    "word": "BANJO",
+    "hint": "A stringed musical instrument. 🎶",
+    "jp": "バンジョー（弦楽器）"
+  },
+  {
+    "word": "CRANE",
+    "hint": "A tall bird or a machine that lifts things. 🏗️",
+    "jp": "クレーン（鳥 または 機械）"
+  },
+  {
+    "word": "EAGLE",
+    "hint": "A bird with very good eyesight. 🦅",
+    "jp": "わし（鳥）"
+  },
+  {
+    "word": "FROGS",
+    "hint": "They jump and go ribbit. 🐸",
+    "jp": "カエル"
+  },
+  {
+    "word": "GRAPE",
+    "hint": "Small purple or green fruits. 🍇",
+    "jp": "ぶどう"
+  },
+  {
+    "word": "HOUSE",
+    "hint": "A place where you live. 🏠",
+    "jp": "いえ"
+  },
+  {
+    "word": "MOUSE",
+    "hint": "Small animal or computer device. 🐭🖱️",
+    "jp": "ねずみ or マウス"
+  },
+  {
+    "word": "WATER",
+    "hint": "You drink this every day. 💧",
+    "jp": "みず"
+  },
+  {
+    "word": "ZEBRA",
+    "hint": "It has black and white stripes. 🦓",
+    "jp": "しまうま"
+  }
 ]
