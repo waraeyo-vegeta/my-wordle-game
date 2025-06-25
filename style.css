@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body {
-  font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #2c2c54);
-  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fefcea, #f1daff);
+  color: #333;
   margin: 0;
   padding: 2em;
   text-align: center;
@@ -12,58 +12,83 @@ body {
 h1 {
   margin-bottom: 20px;
   font-size: 2em;
-  color: #f4f4f4;
+  color: #333;
   letter-spacing: 1px;
 }
 
 #board {
   display: grid;
-  grid-template-columns: repeat(5, 70px);
-  gap: 12px;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
   justify-content: center;
   margin-bottom: 20px;
 }
 
 .cell {
-  width: 70px;
-  height: 70px;
-  font-size: 2.2em;
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
   text-transform: uppercase;
-  background: #333;
-  border-radius: 10px;
-  border: 2px solid #555;
-  color: #fff;
+  background: #e0e0e0;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
-  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: popIn 0.4s ease;
 }
 
+/* アニメーション追加 */
+@keyframes popIn {
+  0%   { transform: scale(0.5); opacity: 0; }
+  60%  { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* 色つきマス */
 .correct {
-  background-color: #6aaa64;
-  border-color: #6aaa64;
+  background-color: #8ef58e;
+  border-color: #6ac46a;
+  color: #fff;
 }
 
 .present {
-  background-color: #c9b458;
-  border-color: #c9b458;
+  background-color: #fdd76a;
+  border-color: #e6b500;
+  color: #fff;
 }
 
 .absent {
-  background-color: #3a3a3c;
-  border-color: #3a3a3c;
+  background-color: #d0d0d0;
+  border-color: #aaa;
+  color: #999;
 }
 
+/* 入力欄 */
 input#guessInput {
   padding: 12px;
   font-size: 1.2em;
   width: 200px;
-  border-radius: 6px;
-  border: none;
+  border-radius: 8px;
+  border: 2px solid #ccc;
   margin-bottom: 10px;
 }
 
+/* ボタン */
 button {
   padding: 12px 24px;
-  fon
+  font-size: 1.1em;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff8a65;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e76a45;
+}
