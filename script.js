@@ -31,3 +31,7 @@ function playSound() {
 }
 
 init();
+
+function submitGuess() {
+  console.log("送信ボタンが押されました！");
+}
