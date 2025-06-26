@@ -12,11 +12,8 @@ async function loadWords() {
   console.log("正解:", solution);
 }
 
-function init() {
-  loadWords();
-  document.getElementById("submitBtn").addEventListener("click", submitGuess);
-  document.getElementById("hintBtn").addEventListener("click", showHint);
-  document.getElementById("soundBtn").addEventListener("click", playSound);
+function submitGuess() {
+  console.log("送信ボタンが押されました！");
 }
 
 function showHint() {
@@ -30,8 +27,12 @@ function playSound() {
   speechSynthesis.speak(utterance);
 }
 
-init();
-
-function submitGuess() {
-  console.log("送信ボタンが押されました！");
+function init() {
+  loadWords();
+  document.getElementById("submitBtn").addEventListener("click", submitGuess);
+  document.getElementById("hintBtn").addEventListener("click", showHint);
+  document.getElementById("soundBtn").addEventListener("click", playSound);
 }
+
+// ページが読み込まれたら init を呼ぶ
+document.addEventListener("DOMContentLoaded", init);
