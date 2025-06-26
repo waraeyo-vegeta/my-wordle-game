@@ -29,3 +29,5 @@ function playSound() {
   utterance.lang = "en-US";
   speechSynthesis.speak(utterance);
 }
+
+init();
